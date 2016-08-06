@@ -1,0 +1,22 @@
+<server_configuration>
+    <master>
+        <hostname></hostname>
+        <hostport></hostport>
+        <hostkeyfile></hostkeyfile>
+        <deviceconfigfile></deviceconfigfile>
+    </master>
+    <remote>
+        <hostname></hostname>
+        <hostport></hostport>
+        <hostkeyfile></hostkeyfile>
+        <deviceconfigfile></deviceconfigfile>
+    </remote>
+    <client>
+        <hostname></hostname>
+        <hostport></hostport>
+        <hostkeyfile></hostkeyfile>
+    </client>
+    <type>
+        <hosttype></hostype>
+    </type>
+</server_configuration>

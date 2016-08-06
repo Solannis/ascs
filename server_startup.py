@@ -1,20 +1,29 @@
 #!/usr/bin/python
 #
 #   Repository: Astromech Secure Control System
-#    Component: Secure Server
+#    Component: Secure Server Startup module (server_startup.py)
 #      Version: 0.1
 # Date Created: 01-Aug-2016 MBF
-# Date Updated: 02-Aug-2016 MBF
+# Date Updated: 05-Aug-2016 MBF
+#
+# 05-Aug-2016
+#   Minor restructuring of code filenames. Moving on with defined startup sequence:
+#       1) Read configuration file: server_readconfig.py
+#       2) Parse command line parameters: server_clap.py
+#       3) Load RSA keys: server_keymanager.py
+#       4) Start listener: server_listener.py
+#       5) Start local command line: server_cli.py
 #
 # 02-Aug-2016
 #   Completed CLAP functionality
 #   Moved CLAP code into its own file, removed it from Secure Server, and added import statement to include it
 #
 
+
 import socket                   # Import the socket module
 import threading                # Import the threading module
 import sys
-from clap import Clap
+from server_clap import Clap
 
 #=========================#
 # Define global variables #
